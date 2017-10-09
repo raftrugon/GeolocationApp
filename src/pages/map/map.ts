@@ -33,7 +33,7 @@ export class Map {
         let myPosition:LatLng = new LatLng(37.359900, -5.986185);
         this.map.animateCamera({target: myPosition, zoom: 10});
       })
-    })
+    }).catch(()=>alert('Google Maps is not avaiable'))
   }
 
 }
